@@ -1,0 +1,83 @@
+
+
+function cookingByNumbers(number, operation1, operation2, operation3, operation4, operation5){
+    let result = 0
+    switch (operation1){
+        case `chop`: result = number / 2
+        break;
+        case `dice`: result = Math.sqrt(number)
+        break;
+        case `spice`: result = number + 1
+        break;
+        case `bake` : result = number * 3
+        break;
+        case `fillet`: result = result * 0.8
+        break
+    }
+    console.log(result)
+    number = result
+    switch (operation2){
+        case `chop`: result = number / 2
+        break;
+        case `dice`: result = Math.sqrt(number)
+        break;
+        case `spice`: result = number + 1
+        break;
+        case `bake` : result = number * 3
+        break;
+        case `fillet`: result = result * 0.8
+        break
+    }
+    console.log(result)
+    number = result
+    switch (operation3){
+        case `chop`: result = number / 2
+        break;
+        case `dice`: result = Math.sqrt(number)
+        break;
+        case `spice`: result = number + 1
+        break;
+        case `bake` : result = number * 3
+        break;
+        case `fillet`: result = result * 0.8
+        break
+    }
+    console.log(result)
+    number = result
+    switch (operation4){
+        case `chop`: result = number / 2
+        break;
+        case `dice`: result = Math.sqrt(number)
+        break;
+        case `spice`: result = number + 1
+        break;
+        case `bake` : result = number * 3
+        break;
+        case `fillet`: result = result * 0.8
+        break
+    }
+    console.log(result)
+    number = result
+    switch (operation5){
+        case `chop`: result = number / 2
+        break;
+        case `dice`: result = Math.sqrt(number)
+        break;
+        case `spice`: result = number + 1
+        break;
+        case `bake` : result = number * 3
+        break;
+        case `fillet`: result = result * 0.8
+        break
+    }
+    number = result
+    console.log(result.toFixed(2))
+
+
+
+
+}
+
+
+cookingByNumbers('32', 'chop', 'chop', 'chop', 'chop', 'chop')
+cookingByNumbers('9', 'dice', 'spice', 'chop', 'bake', 'fillet')
