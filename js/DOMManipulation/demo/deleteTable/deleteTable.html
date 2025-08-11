@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Delete from table</title>
+</head>
+<body>
+    <table border="1" id="customers">
+        <tr><th>Name</th><th>Email</th></tr>
+        <tr><td>Eve</td><td>eve@gmail.com</td></tr>
+        <tr><td>Nick</td><td>nick@softuni.com</td></tr>
+        <tr><td>Didy</td><td>didy@didy.net</td></tr>
+        <tr><td>Tedy</td><td>tedy@tedy.com</td></tr>
+    </table>
+    E-mail: <input type="text" name="email" />
+    <button onclick="deleteByEmail()"> Delete</button>
+    <div id="result"></div>
+    <script>
+        function deleteByEmail(){
+            let email = document.getElementsByName('email')[0].value
+            let tableCells = document.querySelectorAll('#customers td:nth-child(2)')
+
+            for (let cell of tableCells){
+                if (cell.textContent === email){
+                    cell.parentElement.remove()
+                }
+            }
+            document.getElementsByName('email')[0].value = ''
+        }
+        
+
+    </script>
+    
+</body>
+</html>
