@@ -15,7 +15,7 @@ editButton.addEventListener('click', handleEdit);
 
 const divListElement = document.querySelector("#list");
 
-let currentEditId = null; // ще пазим кое ID редактираме
+let currentEditId = null; 
 
 async function handleOrder(e) {
     e.preventDefault();
@@ -43,7 +43,7 @@ async function handleOrder(e) {
 async function handleLoad() {
     const recordsResponse = await fetch(BASE_URL);
     const recordsData = await recordsResponse.json();
-    const recordsArr = Object.entries(recordsData); // [ [id, data], [id, data], ... ]
+    const recordsArr = Object.entries(recordsData); 
 
     divListElement.innerHTML = "";
 
